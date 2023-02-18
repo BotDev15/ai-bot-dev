@@ -18,7 +18,7 @@ app.use(express.static('public'));
 
 app.post('/incoming', async (req, res) => {
   const twiml = new MessagingResponse();
-  // console.log(twiml)
+  console.log("Message received")
   let response;
   await sdk.chatsonic_V2BusinessContentChatsonic_post({
     enable_google_results: true,
